@@ -4,15 +4,10 @@ $(document).ready(onReady);
 
 function onReady(){
     console.log('hello from jQ');
+    //event listener
+    $('#clickMe').on('click', buttonClicked)
 }
 
-function hello(){
-    console.log('helloooooo');
+function buttonClicked(){
+    console.log('I\'m Clicked');  
 }
-
-function goodbye(){
-    console.log('goodbyeeee');
-}
-
-hello();
-goodbye();
